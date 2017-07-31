@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Button from "../src/index"
+import Button from "rc-button"
 
 
 const Demo = () => (
