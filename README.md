@@ -47,6 +47,3 @@ ReactDOM.render(
 )
 ```
 
-###  Because the first time the NPM package is formatted for reference  https://github.com/smronju/React-Music-Player
-
-##### Thank you here
