@@ -1,0 +1,94 @@
+@primary-color: #108ee9;
+@orange-color: #F67F2F;
+@warning-color: #F7C12A;
+@error-color: #E41C1E;
+@success-color: #35C613;
+@info-color:#EDF6FD;
+@bg-color:#FAFAFA;
+@border-color:#e8e8e8;
+@title-color:#999999;
+@sub-title-color:#7A7A7A;
+@label-color:#333;
+@header-height:80px;
+
+//未修改过的
+@default-color: #d9d9d9; 
+@disabled-color:#f7f7f7;
+@loading-color:darken(@info-color,10%);
+@text-color:rgba(0,0,0,.65);
+@font-family:"Yuanti SC",STKaiti,'Microsoft YaHei',Helvetica,sans-serif,Arial,Verdana;
+
+
+@article-content-color:#606a77;
+@article-info-color:#999;
+
+.btn-hover(@color:@default-color,@lighten:3%,@font-color:#fff){
+    color:@font-color;
+    background-color: @color;
+    border:1px solid @color;
+    &:hover,&:active{
+        background-color: lighten(@color,@lighten)
+    }
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 10px 30px;
+    font-size: 12px;
+    height: 38px;
+    user-select: none;
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    color: rgba(0,0,0,.65);
+    background-color: #fff;
+    border-color: @border-color;
+    border-radius: 5px;
+    outline: none;
+    .btn-hover(@default-color);
+    &.btn-primary{
+        .btn-hover(@primary-color)
+    }
+    &.btn-default{
+        color:rgba(0,0,0,.65);
+        background-color: #fff;
+        border:1px solid @default-color;
+        &:hover,&:active{
+            border:1px solid @primary-color
+        }
+    }
+    &.btn-warning{
+        .btn-hover(@warning-color)
+    }
+    &.btn-error{
+        .btn-hover(@error-color)
+    }
+    &.btn-success{
+        .btn-hover(@success-color)
+    }
+    &.btn-orange{
+        .btn-hover(@orange-color)
+    }
+    &.btn-info{
+        .btn-hover(@info-color)
+    }
+    &.btn-disabled{
+        .btn-hover(@disabled-color);
+        cursor:no-drop;
+        border-style:dashed;
+        color: rgba(0,0,0,.25);
+        border-color: #d9d9d9;
+    }
+    &.btn-block{
+        width:100%;
+        display: block
+    }
+}
