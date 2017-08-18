@@ -1,16 +1,13 @@
-# Rc-button
-react button ui component , If you want a nice or beauty button , You might use it :)
+# rc-button
+a react button ui component , If you want a nice or beauty button , You might use it :)
 
-
-#### if you want run example
- - `yarn`
+## Example
+### [Live Demo](https://lijinke666.github.io/rc-button/)
+ - `yarn` or `npm install`
  - `npm run demo`   run example
 
-#### Then open
-```
-locahost:3000
-```
- 
+
+## Install
 ####  use npm
 ```
 npm install rc-button --save
@@ -21,23 +18,25 @@ npm install rc-button --save
 yarn add rc-button
 ```
 
+## Usage
+
 ```javascript
 import React from "react"
 import ReactDOM from "react-dom"
 import Button from "rc-button"
 
-
+const Styles = {marginBottom:10}
 const Demo = () => (
     <div>
         <h2>Example</h2>
         <ol>
-            <li><Button type="default">default</Button></li>
-            <li><Button type="primary" onClick={()=>alert('primary')}>primary</Button></li>
-            <li><Button type="warning">warning</Button></li>
-            <li><Button type="success">success</Button></li>
-            <li><Button type="orange">orange</Button></li>
-            <li><Button type="info">info</Button></li>
-            <li><Button type="disabled" onClick={() => alert('i am disabled')}>disabled</Button></li>
+            <li style={Styles}><Button type="default">default</Button></li>
+            <li style={Styles}><Button type="primary" onClick={()=>alert('primary')}>primary</Button></li>
+            <li style={Styles}><Button type="warning">warning</Button></li>
+            <li style={Styles}><Button type="success">success</Button></li>
+            <li style={Styles}><Button type="orange">orange</Button></li>
+            <li style={Styles}><Button type="info">info</Button></li>
+            <li style={Styles}><Button type="disabled" onClick={() => alert('i am disabled')}>disabled</Button></li>
         </ol>
     </div>
 )
