@@ -3,7 +3,7 @@
 @warning-color: #F7C12A;
 @error-color: #E41C1E;
 @success-color: #35C613;
-@info-color:#EDF6FD;
+@info-color:lighten(@primary-color,15%);
 @bg-color:#FAFAFA;
 @border-color:#e8e8e8;
 @title-color:#999999;
@@ -19,10 +19,7 @@
 @font-family:"Yuanti SC",STKaiti,'Microsoft YaHei',Helvetica,sans-serif,Arial,Verdana;
 
 
-@article-content-color:#606a77;
-@article-info-color:#999;
-
-.btn-hover(@color:@default-color,@lighten:3%,@font-color:#fff){
+.btn-hover(@color:@default-color,@lighten:4%,@font-color:#fff){
     color:@font-color;
     background-color: @color;
     border:1px solid @color;

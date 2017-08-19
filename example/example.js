@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Button from "rc-button"
+import Button from "../src"
 
 const Styles = {marginBottom:10}
 const Demo = () => (
@@ -12,8 +12,10 @@ const Demo = () => (
             <li style={Styles}><Button type="warning">warning</Button></li>
             <li style={Styles}><Button type="success">success</Button></li>
             <li style={Styles}><Button type="orange">orange</Button></li>
+            <li style={Styles}><Button type="error">error</Button></li>
             <li style={Styles}><Button type="info">info</Button></li>
             <li style={Styles}><Button type="disabled" onClick={() => alert('i am disabled')}>disabled</Button></li>
+            <li style={Styles}><Button type="primary" htmlType="submit">submit</Button></li>
         </ol>
     </div>
 )
